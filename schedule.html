@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Расписание — Личный кабинет студента</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="head">
+            <a class="logo" href="./index.html">Личный кабинет студента</a>
+            <nav class="nav">
+                <a href="./index.html">Главная</a>
+                <a href="./schedule.html">Расписание</a>
+                <a href="./grades.html">Оценки</a>
+                <a href="./materials.html">Задания</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="title">
+            <div>
+                <h1>Расписание занятий</h1>
+            </div>
+        </div>
+
+        <div class="tools">
+            <select id="day-filter">
+                <option value="all">Все дни</option>
+                <option value="monday">Понедельник</option>
+                <option value="tuesday">Вторник</option>
+                <option value="wednesday">Среда</option>
+                <option value="thursday">Четверг</option>
+                <option value="friday">Пятница</option>
+                <option value="saturday">Суббота</option>
+            </select>
+        </div>
+
+        <section class="days">
+            <article class="day" data-day="monday">
+                <h2 class="day-title monday">Понедельник</h2>
+                <div class="row">
+                    <span class="number">1</span><strong>МДК 3.24</strong><span>3.24</span><span>11:35–13:10</span>
+                </div>
+                <div class="row">
+                    <span class="number">2</span><strong>Физкультура</strong><span>1.5</span><span>13:30–14:15</span>
+                </div>
+                <div class="row">
+                    <span class="number">3</span><strong>ОАПиП</strong><span>3.16</span><span>15:15–16:45</span>
+                </div>
+                <div class="row">
+                    <span class="number">4</span><strong>МДК 3.24</strong><span>3.24</span><span>16:55–18:25</span>
+                </div>
+            </article>
+
+            <article class="day" data-day="tuesday">
+                <h2 class="day-title tuesday">Вторник</h2>
+                <div class="row"><span class="number">1</span><strong>Архитектура</strong><span>1.11</span><span>11:35–13:10</span></div>
+                <div class="row"><span class="number">2</span><strong>МДК проект</strong><span>3.24</span><span>13:30–15:05</span></div>
+                <div class="row"><span class="number">3</span><strong>Физика</strong><span>3.4</span><span>15:15–16:45</span></div>
+                <div class="row"><span class="number">4</span><strong>ОАПиП</strong><span>3.16</span><span>16:55–18:25</span></div>
+                <div class="row"><span class="number">5</span><strong>МДК проект</strong><span>3.24</span><span>18:30–20:00</span></div>
+            </article>
+
+            <article class="day" data-day="wednesday">
+                <h2 class="day-title wednesday">Среда</h2>
+                <div class="row"><span class="number">1</span><strong>МДК граф</strong><span>3.24 / 3.22</span><span>13:30–15:05</span></div>
+                <div class="row"><span class="number">2</span><strong>Физика</strong><span>3.4</span><span>15:15–16:45</span></div>
+                <div class="row"><span class="number">3</span><strong>Архитектура / МДК проект</strong><span>1.11 / 3.24</span><span>16:55–18:25</span></div>
+            </article>
+
+            <article class="day" data-day="thursday">
+                <h2 class="day-title thursday">Четверг</h2>
+                <div class="row"><span class="number">1</span><strong>Литература</strong><span>3.9</span><span>13:30–15:05</span></div>
+                <div class="row"><span class="number">2</span><strong>Математика</strong><span>2.15</span><span>15:15–16:45</span></div>
+                <div class="row"><span class="number">3</span><strong>Физика</strong><span>3.4</span><span>16:55–18:25</span></div>
+            </article>
+
+            <article class="day" data-day="friday">
+                <h2 class="day-title friday">Пятница</h2>
+                <div class="row"><span class="number">1</span><strong>МДК проект / ОАПиП</strong><span>3.24 / 3.16</span><span>13:30–15:05</span></div>
+                <div class="row"><span class="number">2</span><strong>Литература</strong><span>3.9</span><span>15:15–16:45</span></div>
+                <div class="row"><span class="number">3</span><strong>МДК граф / МДК проект</strong><span>3.24 / 3.22</span><span>16:55–18:25</span></div>
+            </article>
+
+            <article class="day" data-day="saturday">
+                <h2 class="day-title saturday">Суббота</h2>
+                <div class="row"><span class="number">1</span><strong>Иностранный язык / ОАПиП</strong><span>3.8 / 3.16</span><span>11:35–12:35</span></div>
+                <div class="row"><span class="number">2</span><strong>Обществознание</strong><span>3.6</span><span>12:45–13:45</span></div>
+                <div class="row"><span class="number">3</span><strong>ОАПиП / иностранный язык</strong><span>3.16 / 3.8</span><span>13:55–14:55</span></div>
+            </article>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+

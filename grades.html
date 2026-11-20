@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Оценки — Личный кабинет студента</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="head">
+            <a class="logo" href="./index.html">Личный кабинет студента</a>
+            <nav class="nav">
+                <a href="./index.html">Главная</a>
+                <a href="./schedule.html">Расписание</a>
+                <a href="./grades.html">Оценки</a>
+                <a href="./materials.html">Задания</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="title">
+            <div>
+                <h1>Зачётная книжка</h1>
+            </div>
+        </div>
+
+        <div class="average">
+            <div>
+                <div class="gray small">Средний балл по текущим результатам</div>
+                <strong>Итог без округления вверх</strong>
+            </div>
+            <div id="average-value" class="average-number">—</div>
+        </div>
+
+        <section class="block">
+            <div class="tools">
+                <h2>Результаты</h2>
+            </div>
+
+            <div class="table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Предмет</th>
+                            <th>Тип</th>
+                            <th>Оценка</th>
+                            <th>Комментарий</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-grade-row data-grade="4">
+                            <td>Физика</td>
+                            <td>Экзамен</td>
+                            <td class="good">4</td>
+                            <td>Слава богу, сдал</td>
+                        </tr>
+                        <tr data-grade-row data-grade="5">
+                            <td>МДК проект</td>
+                            <td>Экзамен</td>
+                            <td class="good">Надеюсь на 5</td>
+                            <td>Пожалуйста, 5 поставьте</td>
+                        </tr>
+                        <tr data-grade-row data-grade="3">
+                            <td>Высшая математика</td>
+                            <td>Экзамен</td>
+                            <td class="good">3</td>
+                            <td>Занизила мне оценку из-за того, что она меня недолюбливает</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
+
